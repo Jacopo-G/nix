@@ -15,5 +15,6 @@
     ./rofi.nix
     ./syncthing.nix
     ./git.nix
+    ./alacritty.nix
   ];
 }

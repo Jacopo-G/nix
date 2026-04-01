@@ -117,7 +117,6 @@
     home-manager
     lf
     wget
-    alacritty
     foot
     btop
     librewolf
