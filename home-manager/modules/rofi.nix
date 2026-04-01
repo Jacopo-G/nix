@@ -6,8 +6,8 @@
 }: {
   programs.rofi = {
     enable = true;
-    theme = "Arc-Dark";
-    font = "Droid Sans Mono 14";
+    #theme = "Arc-Dark";
+    #font = "Droid Sans Mono 14";
     modes = [
       "drun"
       "run"

@@ -13,12 +13,18 @@
       url = "github:Gerg-L/spicetify-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     nixpkgs,
     home-manager,
     spicetify-nix,
+    stylix,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -27,8 +33,9 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       inherit system;
       modules = [
-        ./nixos/configuration.nix
         home-manager.nixosModules.home-manager
+        stylix.nixosModules.stylix
+        ./nixos/configuration.nix
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
