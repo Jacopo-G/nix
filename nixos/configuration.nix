@@ -1,15 +1,16 @@
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
-
-{ config, pkgs, ... }:
-
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ./modules/bundle.nix
-    ];
+  config,
+  pkgs,
+  ...
+}: {
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    ./modules/bundle.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -47,24 +48,22 @@
 
   programs.hyprland = {
     enable = true;
-  # withUWSM = true;
+    # withUWSM = true;
     xwayland.enable = true;
   };
 
   programs.neovim.enable = true;
 
-
-# Define a user account. Don't forget to set a password with ‘passwd’.
+  # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.alvino = {
     isNormalUser = true;
     description = "Alvino";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [];
   };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
 
   #
   # Audio
@@ -84,27 +83,26 @@
 
   # Enable Bluetooth Support
   hardware.bluetooth = {
-  enable = true;
-  powerOnBoot = true;
-  settings = {
-    General = {
-      # Shows battery charge of connected devices on supported
-      # Bluetooth adapters. Defaults to 'false'.
-      Experimental = true;
-      # When enabled other devices can connect faster to us, however
-      # the tradeoff is increased power consumption. Defaults to
-      # 'false'.
-      FastConnectable = true;
+    enable = true;
+    powerOnBoot = true;
+    settings = {
+      General = {
+        # Shows battery charge of connected devices on supported
+        # Bluetooth adapters. Defaults to 'false'.
+        Experimental = true;
+        # When enabled other devices can connect faster to us, however
+        # the tradeoff is increased power consumption. Defaults to
+        # 'false'.
+        FastConnectable = true;
       };
-    Policy = {
-      # Enable all controllers when they are found. This includes
-      # adapters present on start as well as adapters that are plugged
-      # in later on. Defaults to 'true'.
-      AutoEnable = true;
+      Policy = {
+        # Enable all controllers when they are found. This includes
+        # adapters present on start as well as adapters that are plugged
+        # in later on. Defaults to 'true'.
+        AutoEnable = true;
       };
     };
   };
-
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -112,7 +110,6 @@
     variant = "";
   };
 
-  
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -126,6 +123,7 @@
     librewolf
     pavucontrol
     pamixer
+    alejandra
   ];
 
   environment.variables.EDITOR = "vim";
@@ -138,7 +136,7 @@
   #   enableSSHSupport = true;
   # };
 
-   # List services that you want to enable:
+  # List services that you want to enable:
 
   services.blueman.enable = true;
 
@@ -165,8 +163,7 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   system.stateVersion = "25.11"; # Did you read the comment?
-
 }

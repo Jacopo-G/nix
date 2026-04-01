@@ -1,3 +1,7 @@
-{config, pkgs, ... }: {
-	security.pam.services.hyprlock = {};
+{
+  config,
+  pkgs,
+  ...
+}: {
+  security.pam.services.hyprlock = {};
 }
