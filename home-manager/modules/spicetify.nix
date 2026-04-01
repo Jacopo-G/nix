@@ -21,7 +21,7 @@ in {
     enabledSnippets = with spicePkgs.snippets; [
       hidePlayCount
     ];
-    #theme = spicePkgs.themes.catppuccin;
-    #colorScheme = "macchiato";
+    theme = spicePkgs.themes.catppuccin;
+    colorScheme = "macchiato";
   };
 }

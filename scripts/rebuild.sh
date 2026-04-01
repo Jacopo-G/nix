@@ -6,7 +6,7 @@ alejandra . &>/dev/null
 git diff -U0 -- '*.nix'
 echo "NixOS Rebuilding..."
 if ! sudo nixos-rebuild switch --flake &>~/logs/nixos-switch.log; then
-  grep --color error ~/logs/nixos-switch.log || true
+  grep --color error nixos-switch.log || true
   exit 1
 fi
 

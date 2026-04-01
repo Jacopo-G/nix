@@ -8,6 +8,5 @@
     ./hypr/hyprlock.nix
     ./audio.nix
     ./bluetooth.nix
-    ./stylix.nix
   ];
 }
