@@ -16,5 +16,6 @@
     ./syncthing.nix
     ./git.nix
     ./alacritty.nix
+    ./fzf.nix
   ];
 }
