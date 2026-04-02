@@ -11,6 +11,7 @@
 
     packages = with pkgs; [
       # add user-specific packages
+      catppuccin-cursors.macchiatoLavender
       hyprpaper
     ];
   };
