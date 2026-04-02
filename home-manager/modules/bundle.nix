@@ -17,5 +17,6 @@
     ./git.nix
     ./alacritty.nix
     ./fzf.nix
+    ./librewolf.nix
   ];
 }

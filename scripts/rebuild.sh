@@ -3,8 +3,8 @@ set -euo pipefail
 CONFIG_DIR=~/nix/
 pushd "$CONFIG_DIR"
 alejandra . &>/dev/null
+git diff -U0 
 git add .
-git diff -U0 -- '*.nix'
 echo "NixOS Rebuilding..."
 if ! sudo nixos-rebuild switch --flake &>~/logs/nixos-switch.log; then
   grep --color error ~/logs/nixos-switch.log || true

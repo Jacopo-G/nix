@@ -119,7 +119,6 @@
     wget
     foot
     btop
-    librewolf
     pavucontrol
     pamixer
     alejandra
