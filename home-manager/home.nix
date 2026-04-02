@@ -13,6 +13,9 @@
       # add user-specific packages
       catppuccin-cursors.macchiatoLavender
       hyprpaper
+      libreoffice
+      hunspell
+      hunspellDicts.en_US
     ];
   };
   home.file.".config/hypr/hyprland.conf".source = ../config/hypr/hyprland.conf;
