@@ -16,7 +16,7 @@
       libreoffice
       hunspell
       hunspellDicts.en_US
-      font-awesome
+      nerd-fonts.jetbrains-mono
     ];
   };
   home.file.".config/hypr/hyprland.conf".source = ../config/hypr/hyprland.conf;
