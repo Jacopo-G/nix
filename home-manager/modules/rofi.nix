@@ -7,7 +7,7 @@
   programs.rofi = {
     enable = true;
     #theme = "Arc-Dark";
-    font = "JetBrainsMono Nerd Font";
+    font = "JetBrainsMono Nerd Font 10";
     modes = [
       "drun"
       "run"

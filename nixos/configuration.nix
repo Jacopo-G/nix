@@ -52,8 +52,6 @@
     xwayland.enable = true;
   };
 
-  programs.neovim.enable = true;
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.alvino = {
     isNormalUser = true;
@@ -113,7 +111,6 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     home-manager
     lf
     wget
@@ -123,8 +120,6 @@
     pamixer
     alejandra
   ];
-
-  environment.variables.EDITOR = "vim";
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

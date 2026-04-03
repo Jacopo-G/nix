@@ -5,7 +5,7 @@
 }: {
   programs.alacritty = {
     enable = true;
-    theme = "catppuccin_macchiato";
+    #theme = "catppuccin_macchiato";
     settings = {
       font = {
         normal = {
