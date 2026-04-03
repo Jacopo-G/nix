@@ -18,6 +18,7 @@
       hunspellDicts.en_US
       nerd-fonts.jetbrains-mono
       playerctl
+      jq
     ];
   };
   home.file.".config/hypr/hyprland.conf".source = ../config/hypr/hyprland.conf;

@@ -38,9 +38,10 @@
             default = "";
           };
           persistent-workspaces = {
-            "*" = 5;
+            "*" = [1 2 3 4 5];
           };
           on-click = "activate";
+          all-outputs = false;
         };
         "mpris" = {
           format = "{player_icon} {title} - {artist}";
@@ -62,111 +63,110 @@
     ];
     style = ''
 
-                /* ---------------
-                   Defining Colors
-            --------------- */
+                    /* ---------------
+                       Defining Colors
+                --------------- */
 
-                /*
-                br - border
-                bg - background
-                fg - foreground
-                */
+                    /*
+                    br - border
+                    bg - background
+                    fg - foreground
+                    */
 
-                /* Main colors */
+                    /* Main colors */
 
-                @define-color main-br        @subtext0;
-                @define-color main-bg        @crust;
-                @define-color main-fg        @text;
-                @define-color hover-bg       @base;
-                @define-color hover-fg       alpha(@main-fg, 0.75);
-                @define-color outline        shade(@main-bg, 0.5);
+                    @define-color main-br        @subtext0;
+                    @define-color main-bg        @crust;
+                    @define-color main-fg        @text;
+                    @define-color hover-bg       @base;
+                    @define-color hover-fg       alpha(@main-fg, 0.75);
+                    @define-color outline        shade(@main-bg, 0.5);
 
-                /* Module colors */
+                    /* Module colors */
 
-                @define-color workspaces     @mantle;
-                @define-color temperature    @mantle;
-                @define-color memory         @base;
-                @define-color cpu            @surface0;
-                @define-color time           @surface0;
-                @define-color date           @base;
-                @define-color tray           @mantle;
-                @define-color volume         @mantle;
-                @define-color backlight      @base;
-                @define-color battery        @surface0;
+                    @define-color workspaces     @mantle;
+                    @define-color temperature    @mantle;
+                    @define-color memory         @base;
+                    @define-color cpu            @surface0;
+                    @define-color time           @surface0;
+                    @define-color date           @base;
+                    @define-color tray           @mantle;
+                    @define-color volume         @mantle;
+                    @define-color backlight      @base;
+                    @define-color battery        @surface0;
 
-                /* State colors */
+                    /* State colors */
 
-                @define-color warning        @yellow;
-                @define-color critical       @red;
-                @define-color charging       @green;
+                    @define-color warning        @yellow;
+                    @define-color critical       @red;
+                    @define-color charging       @green;
 
-                /* ---------------
-                       Styling
-            --------------- */
+                    /* ---------------
+                           Styling
+                --------------- */
 
-           /* Main Style */
+               /* Main Style */
 
-                * {
-                	font-family: "JetBrainsMono Nerd Font", sans-serif;
-                	font-weight: bold;
-                	font-size: 16px;
-                }
+                    * {
+                    	font-family: "JetBrainsMono Nerd Font", sans-serif;
+                    	font-weight: bold;
+                    	font-size: 16px;
+      	all: initial;
+      	color: @main-fg
+                    }
 
-                #waybar {
-                	background-color: @outline;
-                }
-                #waybar > box {
-                	margin: 4px;
-                	background-color: @main-bg;
-                }
-
-                button {
-                	border-radius: 16px;
-                	min-width: 16px;
-                	padding: 0 10px;
-                }
-                button:hover {
-                	background-color: @hover-bg;
-                	color: @hover-fg;
-                }
-
-                tooltip {
-                	border: 2px solid @main-br;
-                	border-radius: 10px;
-                	background-color: @main-bg;
-                }
-                tooltip > box {
-                	padding: 0 6px;
-                }
-
-           /* TEMP */
-           window#waybar {
-           	min-height: 30px;
-           }
-
-
-           /* ------- MODULE SPECIFIC --------- */
-
-           /* Workspaces */
-
-           #workspaces {
-           	padding: 0 1px;
-           	background-color: @workspaces;
-           }
-           #workspaces button {
-           	padding: 5px;
-           }
-
-           #workspaces button.active label,
-           #workspaces button.focused label {
-           	color: @accent;
-           }
-
-      /* mpris */
-
-      #mpris {
-      	padding: 0 12px;
+      tooltip label {
+      	font-weight: normal;
       }
+
+                    #waybar {
+                    	background-color: @outline;
+      	border-radius: 8px;
+                    }
+                    #waybar > box {
+                    	margin: 4px;
+                    	background-color: @main-bg;
+      	border-radius: 8px;
+                    }
+
+                    button {
+                    	border-radius: 16px;
+                    	min-width: 16px;
+                    	padding: 0 10px;
+                    }
+                    button:hover {
+                    	background-color: @hover-bg;
+                    	color: @hover-fg;
+                    }
+
+                    tooltip {
+                    	border: 2px solid @main-br;
+                    	border-radius: 10px;
+                    	background-color: @main-bg;
+                    }
+                    tooltip > box {
+                    	padding: 0 6px;
+                    }
+
+               /* ------- MODULE SPECIFIC --------- */
+
+               /* Workspaces */
+
+               #workspaces {
+               	padding: 0 1px;
+               	background-color: @workspaces;
+               }
+
+               #workspaces button.active label,
+               #workspaces button.focused label {
+               	color: @accent;
+               }
+
+          /* mpris */
+
+          #mpris {
+          	padding: 0 12px;
+          }
     '';
   };
 }

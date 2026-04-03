@@ -9,6 +9,6 @@
     flavor = "macchiato";
     accent = "lavender";
     ### APPLICATION SPECIFIC DISABLES ###
-    hyprlock.enable = true;
+    hyprlock.enable = false;
   };
 }
