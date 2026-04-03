@@ -5,6 +5,7 @@
   ...
 }: {
   imports = [
+    ./theming/catppuccin.nix
     ./bash.nix
     ./spicetify.nix
     ./keepassxc.nix

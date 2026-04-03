@@ -4,6 +4,7 @@
   ...
 }: {
   imports = [
+    ./theming/catppuccin.nix
     ./hypr/hyprland.nix
     ./hypr/hyprlock.nix
     ./audio.nix
