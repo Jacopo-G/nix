@@ -19,5 +19,6 @@
     ./alacritty.nix
     ./fzf.nix
     ./librewolf.nix
+    ./neovim.nix
   ];
 }
