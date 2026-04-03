@@ -8,57 +8,55 @@
     enable = true;
     settings = [
       {
-        mainBar = {
-          ### config inspired by sejjy/mechabar ###
-          /*
-             --------------
-          LAYOUT
+        ### config inspired by sejjy/mechabar ###
+        /*
            --------------
-          */
-          modules-left = [
-            "clock"
-          ];
-          modules-center = [
-            "hyprland/workspaces"
-          ];
-          modules-right = [
-            "mpris"
-          ];
-          layer = "top";
-          position = "top";
-          height = 30;
+        LAYOUT
+         --------------
+        */
+        modules-left = [
+          "clock"
+        ];
+        modules-center = [
+          "hyprland/workspaces"
+        ];
+        modules-right = [
+          "mpris"
+        ];
+        layer = "top";
+        position = "top";
+        height = 30;
 
-          "clock" = {
-            format = "{:%H:%M}";
-          };
+        "clock" = {
+          format = "{:%H:%M}";
+        };
 
-          "hyprland/workspaces" = {
-            format = "{icon}";
-            format-icons = {
-              active = "";
-              default = "";
-            };
-            persistent-workspaces = {
-              "*" = 5;
-            };
-            on-click = "activate";
+        "hyprland/workspaces" = {
+          format = "{icon}";
+          format-icons = {
+            active = "";
+            default = "";
           };
-          "mpris" = {
-            format = "{player_icon} {title} - {artist}";
-            format-paused = "{status_icon} {title} - {artist}";
-            tooltip-format = "Playing: {title} - {artist}";
-            tooltip-format-paused = "Paused: {title} - {artist}";
-            # on-click =
-            # on-click-middle =
-            # on-click-right =
-            player-icons = {
-              default = "";
-            };
-            status-icons = {
-              paused = "";
-            };
-            max-length = 1000;
+          persistent-workspaces = {
+            "*" = 5;
           };
+          on-click = "activate";
+        };
+        "mpris" = {
+          format = "{player_icon} {title} - {artist}";
+          format-paused = "{status_icon} {title} - {artist}";
+          tooltip-format = "Playing: {title} - {artist}";
+          tooltip-format-paused = "Paused: {title} - {artist}";
+          # on-click =
+          # on-click-middle =
+          # on-click-right =
+          player-icons = {
+            default = "";
+          };
+          status-icons = {
+            paused = "";
+          };
+          max-length = 1000;
         };
       }
     ];
