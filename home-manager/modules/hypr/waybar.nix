@@ -11,7 +11,7 @@
         mainBar = {
           layer = "top";
           position = "top";
-          # height = 30;
+          height = 30;
           modules-left = [];
           modules-center = ["hyprland/workspaces"];
           modules-right = ["mpd" "custom/mymodule#with-css-id" "temperature"];
