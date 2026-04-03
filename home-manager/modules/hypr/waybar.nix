@@ -16,6 +16,7 @@
            --------------
           */
           modules-left = [
+            "clock"
           ];
           modules-center = [
             "hyprland/workspaces"
@@ -26,6 +27,10 @@
           layer = "top";
           position = "top";
           height = 30;
+
+          "clock" = {
+            format = "{:%H:%M}";
+          };
 
           "hyprland/workspaces" = {
             format = "{icon}";
