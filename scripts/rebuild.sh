@@ -2,7 +2,7 @@
 set -euo pipefail
 CONFIG_DIR=~/nix/
 pushd "$CONFIG_DIR"
-alejandra . &>/dev/null
+alejandra .
 git diff -U0 
 git add .
 echo "NixOS Rebuilding..."
