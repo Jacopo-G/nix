@@ -45,75 +45,106 @@
     ];
     style = ''
 
-      /* Defining Colors */
+           /* ---------------
+              Defining Colors
+       --------------- */
 
-      /*
-      br - border
-      bg - background
-      fg - foreground
-      */
+           /*
+           br - border
+           bg - background
+           fg - foreground
+           */
 
-      /* Main colors */
+           /* Main colors */
 
-      @define-color main-br        @subtext0;
-      @define-color main-bg        @crust;
-      @define-color main-fg        @text;
-      @define-color hover-bg       @base;
-      @define-color hover-fg       alpha(@main-fg, 0.75);
-      @define-color outline        shade(@main-bg, 0.5);
+           @define-color main-br        @subtext0;
+           @define-color main-bg        @crust;
+           @define-color main-fg        @text;
+           @define-color hover-bg       @base;
+           @define-color hover-fg       alpha(@main-fg, 0.75);
+           @define-color outline        shade(@main-bg, 0.5);
 
-      /* Module colors */
+           /* Module colors */
 
-      @define-color workspaces     @mantle;
-      @define-color temperature    @mantle;
-      @define-color memory         @base;
-      @define-color cpu            @surface0;
-      @define-color time           @surface0;
-      @define-color date           @base;
-      @define-color tray           @mantle;
-      @define-color volume         @mantle;
-      @define-color backlight      @base;
-      @define-color battery        @surface0;
+           @define-color workspaces     @mantle;
+           @define-color temperature    @mantle;
+           @define-color memory         @base;
+           @define-color cpu            @surface0;
+           @define-color time           @surface0;
+           @define-color date           @base;
+           @define-color tray           @mantle;
+           @define-color volume         @mantle;
+           @define-color backlight      @base;
+           @define-color battery        @surface0;
 
-      /* State colors */
+           /* State colors */
 
-      @define-color warning        @yellow;
-      @define-color critical       @red;
-      @define-color charging       @green;
+           @define-color warning        @yellow;
+           @define-color critical       @red;
+           @define-color charging       @green;
 
-      * {
-      	font-family: "JetBrainsMono Nerd Font", sans-serif;
-      	font-weight: bold;
-      	font-size: 16px;
+           /* ---------------
+                  Styling
+       --------------- */
+
+      /* Main Style */
+
+           * {
+           	font-family: "JetBrainsMono Nerd Font", sans-serif;
+           	font-weight: bold;
+           	font-size: 16px;
+           }
+
+           #waybar {
+           	background-color: @outline;
+           }
+           #waybar > box {
+           	margin: 4px;
+           	background-color: @main-bg;
+           }
+
+           button {
+           	border-radius: 16px;
+           	min-width: 16px;
+           	padding: 0 10px;
+           }
+           button:hover {
+           	background-color: @hover-bg;
+           	color: @hover-fg;
+           }
+
+           tooltip {
+           	border: 2px solid @main-br;
+           	border-radius: 10px;
+           	background-color: @main-bg;
+           }
+           tooltip > box {
+           	padding: 0 6px;
+           }
+
+      /* TEMP */
+      window#waybar {
+      	min-height: 30px;
       }
 
-      #waybar {
-      	background-color: @outline;
-      }
-      #waybar > box {
-      	margin: 4px;
-      	background-color: @main-bg;
+
+      /* ------- MODULE SPECIFIC --------- */
+
+      /* Workspaces */
+
+      #workspaces {
+      	padding: 0 1px;
+      	background-color: @workspaces;
       }
 
-      button {
-      	border-radius: 16px;
-      	min-width: 16px;
-      	padding: 0 10px;
-      }
-      button:hover {
-      	background-color: @hover-bg;
-      	color: @hover-fg;
+      #workspaces button.active label,
+      #workspaces button.focused label {
+      	color: @accent;
       }
 
-      tooltip {
-      	border: 2px solid @main-br;
-      	border-radius: 10px;
-      	background-color: @main-bg;
+      #window {
+      	margin: 0 12px;
       }
-      tooltip > box {
-      	padding: 0 6px;
-      }
-
     '';
   };
 }
