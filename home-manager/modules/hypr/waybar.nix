@@ -29,6 +29,7 @@
       * {
         font-family: "JetBrainsMono Nerd Font", sans-serif;
         font-size: 13px;
+        min-height: 30;
       }
 
     '';
