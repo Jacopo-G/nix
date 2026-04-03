@@ -26,8 +26,10 @@
       }
     ];
     style = ''
-        		font-family: "JetBrainsMono Nerd Font", sans-serif;
-      font-size: 13px;
+      * {
+        font-family: "JetBrainsMono Nerd Font", sans-serif;
+        font-size: 13px;
+      }
 
     '';
   };
