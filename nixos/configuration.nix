@@ -114,7 +114,6 @@
     home-manager
     lf
     wget
-    foot
     btop
     pavucontrol
     pamixer
