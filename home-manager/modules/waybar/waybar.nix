@@ -25,9 +25,9 @@ in {
           */
           modules-left = [
             "hyprland/workspaces"
-            "clock#time"
           ];
           modules-center = [
+            "clock#time"
           ];
           modules-right = [
             "mpris"
