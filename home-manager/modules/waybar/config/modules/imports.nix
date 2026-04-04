@@ -8,3 +8,4 @@
   "custom/distro" = import ./custom/distro.nix;
   "custom/notification" = import ./custom/notification.nix;
 }
+// import ./custom/dividers.nix
