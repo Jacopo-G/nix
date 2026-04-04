@@ -1,6 +1,7 @@
 /* Temperature */
 #custom-left_div.2 {
 	color: @temperature;
+	margin-left: 10px;
 }
 #temperature {
 	background-color: @temperature;
