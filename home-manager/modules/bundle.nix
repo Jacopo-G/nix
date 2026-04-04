@@ -21,5 +21,6 @@
     ./fzf.nix
     ./librewolf.nix
     ./neovim.nix
+    ./btop/btop.nix
   ];
 }
