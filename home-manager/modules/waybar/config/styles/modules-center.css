@@ -1,3 +1,9 @@
+#custom-distro {
+	padding: 0 10px 0 5px;
+	background-color: @accent;
+	color: @main-bg;
+}
+/* Clock */
 #clock.time {
 	padding-right: 6px;
 	background-color: @time;

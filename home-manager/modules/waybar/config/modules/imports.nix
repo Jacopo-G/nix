@@ -5,4 +5,5 @@
   # HYPR
   "hyprland/workspaces" = import ./hypr/workspaces.nix;
   # CUSTOM
+  "custom/distro" = import ./custom/distro.nix;
 }

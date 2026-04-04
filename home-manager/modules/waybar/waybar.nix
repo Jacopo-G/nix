@@ -27,6 +27,7 @@ in {
             "hyprland/workspaces"
           ];
           modules-center = [
+            "custom/distro"
             "clock#time"
           ];
           modules-right = [
