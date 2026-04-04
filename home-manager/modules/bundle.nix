@@ -10,9 +10,9 @@
     ./spicetify.nix
     ./keepassxc.nix
     ./hypr/hyprpaper.nix
-    ./hypr/waybar.nix
     ./hypr/hyprlock.nix
     ./hypr/hypridle.nix
+    ./waybar/waybar.nix
     ./rofi.nix
     ./syncthing.nix
     ./git.nix
