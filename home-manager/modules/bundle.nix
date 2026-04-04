@@ -13,6 +13,7 @@
     ./hypr/hyprlock.nix
     ./hypr/hypridle.nix
     ./waybar/waybar.nix
+    ./swaync/swaync.nix
     ./rofi.nix
     ./syncthing.nix
     ./git.nix

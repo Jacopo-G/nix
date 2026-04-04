@@ -32,6 +32,7 @@ in {
           ];
           modules-right = [
             "mpris"
+            "custom/notification"
           ];
           layer = "top";
           position = "top";
