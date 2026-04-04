@@ -114,7 +114,6 @@
     home-manager
     lf
     wget
-    btop
     pavucontrol
     pamixer
     alejandra
