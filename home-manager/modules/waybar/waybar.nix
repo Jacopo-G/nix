@@ -34,6 +34,6 @@ in {
           };
         })
     ];
-    style = builtins.toPath ./. + "./config/styles/style.css";
+    style = builtins.toPath ./. + "/config/styles/style.css";
   };
 }
