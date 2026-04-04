@@ -1,9 +1,9 @@
-@import "colors.css";
+@import "config/styles/colors.css";
 
-@import "modules-left.css";
-@import "modules-center.css";
-@import "modules-right.css";
-@import "states.css";
+@import "config/styles/modules-left.css";
+@import "config/styles/modules-center.css";
+@import "config/styles/modules-right.css";
+@import "config/styles/states.css";
 
 * {
 	font-family: "JetBrainsMono Nerd Font", sans-serif;
