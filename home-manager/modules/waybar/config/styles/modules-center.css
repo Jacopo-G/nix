@@ -31,7 +31,7 @@
 }
 
 #custom-distro {
-	padding: 0 10px 0 5px;
+	padding: 0 10px;
 	background-color: @accent;
 	color: @main-bg;
 }
@@ -41,7 +41,6 @@
 }
 
 #clock.time {
-	padding-right: 6px;
 	background-color: @time;
 }
 #custom-right_div.3 {
@@ -50,7 +49,6 @@
 }
 /* Calendar */
 #clock.date {
-	padding-left: 6px;
 	background-color: @date;
 }
 #custom-right_div.4 {
@@ -60,11 +58,11 @@
 /* Tray */
 #network {
 	background-color: @tray;
-	padding: 0 6px 0 4px;
+	/*padding: 0 5px;*/
 }
 #bluetooth {
 	background-color: @tray;
-	padding: 0 5px;
+	/*padding: 0 5px;*/
 }
 #custom-right_div.5 {
 	color: @tray;

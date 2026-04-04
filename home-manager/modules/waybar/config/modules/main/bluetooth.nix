@@ -4,8 +4,9 @@
   format-off = "󰂲";
   format-on = "󰂰";
   format-connected = "󰂱";
-  min-length = 3;
-  max-length = 3;
+  min-length = 4;
+  max-length = 4;
+  on-click = "blueman-manager";
   tooltip-format = "Device Addr: {device_address}";
   tooltip-format-disabled = "Bluetooth Disabled";
   tooltip-format-off = "Bluetooth Off";

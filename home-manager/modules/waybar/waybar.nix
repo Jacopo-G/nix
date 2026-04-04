@@ -47,6 +47,7 @@ in {
             "custom/right_div#4"
             "network"
             "bluetooth"
+            "custom/right_div#5"
           ];
           modules-right = [
             "mpris"

@@ -6,8 +6,8 @@
   format-disconnected = "󰤯";
   format-disabled = "󰤮";
   format-icons = ["󰤟" "󰤢" "󰤥" "󰤨"];
-  min-length = 3;
-  max-length = 3;
+  min-length = 4;
+  max-length = 4;
   tooltip-format = "<b>Gateway</b>: {gwaddr}";
   tooltip-format-ethernet = "<b>Interface</b>: {ifname}";
   tooltip-format-wifi = "<b>Network</b>: {essid}\n<b>IP Addr</b>: {ipaddr}/{cidr}\n<b>Strength</b>: {signalStrength}%\n<b>Frequency</b>: {frequency} GHz";
