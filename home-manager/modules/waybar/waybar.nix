@@ -30,6 +30,10 @@ in {
             "custom/right_div#1"
           ];
           modules-center = [
+            "custom/left_div#2"
+            "temperature"
+            "custom/left_div#3"
+            "memory"
             "custom/left_div#4"
             "cpu"
             "custom/left_inv#1"
@@ -38,6 +42,11 @@ in {
             "custom/right_div#2"
             "custom/right_inv#1"
             "clock#time"
+            "custom/right_div#3"
+            "clock#date"
+            "custom/right_div#4"
+            "network"
+            "bluetooth"
           ];
           modules-right = [
             "mpris"

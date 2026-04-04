@@ -1,7 +1,12 @@
 {
   # MAIN
+  "temperature" = import ./main/temperature.nix;
+  "memory" = import ./main/memory.nix;
   "cpu" = import ./main/cpu.nix;
   "clock#time" = import ./main/clock-time.nix;
+  "clock#date" = import ./main/clock-date.nix;
+  "network" = import ./main/network.nix;
+  "bluetooth" = import ./main/bluetooth.nix;
   "mpris" = import ./main/mpris.nix;
   # HYPR
   "hyprland/workspaces" = import ./hypr/workspaces.nix;

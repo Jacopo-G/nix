@@ -7,5 +7,8 @@
     warning = 75;
     critical = 90;
   };
-  tooltip = false;
+  min-length = 7;
+  max-length = 7;
+  tooltip-format = "Cpu Usage: Load: {load} - Frequency: {avg_frequency}";
+  on-click = "btop";
 }
