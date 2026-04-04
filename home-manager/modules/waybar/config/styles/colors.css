@@ -1,0 +1,34 @@
+/*
+br - border
+bg - background
+fg - foreground
+*/
+
+/* Main colors */
+
+@define-color main-br        @subtext0;
+@define-color main-bg        @crust;
+@define-color main-fg        @text;
+@define-color hover-bg       @base;
+@define-color hover-fg       alpha(@main-fg, 0.75);
+@define-color outline        shade(@main-bg, 0.5);
+
+/* Module colors */
+
+@define-color workspaces     @mantle;
+@define-color temperature    @mantle;
+@define-color memory         @base;
+@define-color cpu            @surface0;
+@define-color time           @surface0;
+@define-color date           @base;
+@define-color tray           @mantle;
+@define-color volume         @mantle;
+@define-color backlight      @base;
+@define-color battery        @surface0;
+
+/* State colors */
+
+@define-color warning        @yellow;
+@define-color critical       @red;
+@define-color charging       @green;
+

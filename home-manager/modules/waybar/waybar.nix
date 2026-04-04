@@ -17,10 +17,10 @@ in {
            --------------
           */
           modules-left = [
-            "clock"
+            "hyprland/workspaces"
+            "clock#time"
           ];
           modules-center = [
-            "hyprland/workspaces"
           ];
           modules-right = [
             "mpris"
@@ -28,10 +28,6 @@ in {
           layer = "top";
           position = "top";
           height = 30;
-
-          "clock" = {
-            format = "{:%H:%M}";
-          };
         })
     ];
     style = builtins.readFile ./config/styles/style.css;

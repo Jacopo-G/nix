@@ -1,0 +1,4 @@
+#clock.time {
+	padding-right: 6px;
+	background-color: @time;
+}
