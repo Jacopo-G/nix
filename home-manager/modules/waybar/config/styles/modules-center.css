@@ -1,10 +1,35 @@
+/* CPU */
+#custom-left_div.4 {
+	background-color: @memory;
+	color: @cpu;
+}
+#cpu {
+	background-color: @cpu;
+}
+#custom-left_inv.1 {
+	color: @cpu;
+}
+/* Distro Icon */
+#custom-left_div.5,
+#custom-right_div.2 {
+	color: @accent;
+}
+
 #custom-distro {
 	padding: 0 10px 0 5px;
 	background-color: @accent;
 	color: @main-bg;
 }
 /* Clock */
+#custom-right_inv.1 {
+	color: @time;
+}
+
 #clock.time {
 	padding-right: 6px;
 	background-color: @time;
+}
+#custom-right_div.3 {
+	background-color: @date;
+	color: @time;
 }

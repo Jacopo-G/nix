@@ -1,7 +1,8 @@
 {
   # MAIN
-  "mpris" = import ./main/mpris.nix;
+  "cpu" = import ./main/cpu.nix;
   "clock#time" = import ./main/clock-time.nix;
+  "mpris" = import ./main/mpris.nix;
   # HYPR
   "hyprland/workspaces" = import ./hypr/workspaces.nix;
   # CUSTOM

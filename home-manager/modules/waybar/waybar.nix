@@ -24,15 +24,23 @@ in {
            --------------
           */
           modules-left = [
+            "custom/notification"
+            "custom/left_div#1"
             "hyprland/workspaces"
+            "custom/right_div#1"
           ];
           modules-center = [
+            "custom/left_div#4"
+            "cpu"
+            "custom/left_inv#1"
+            "custom/left_div#5"
             "custom/distro"
+            "custom/right_div#2"
+            "custom/right_inv#1"
             "clock#time"
           ];
           modules-right = [
             "mpris"
-            "custom/notification"
           ];
           layer = "top";
           position = "top";

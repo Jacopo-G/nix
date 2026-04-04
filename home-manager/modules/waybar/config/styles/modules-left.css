@@ -1,4 +1,13 @@
+/* Notification */
+#custom-notification {
+	padding: 0 12px;
+}
+
 /* Workspaces */
+#custom-left_div.1,
+#custom-right_div.1 {
+	color: @workspaces;
+}
 
 #workspaces {
 	padding: 0 1px;
