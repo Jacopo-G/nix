@@ -8,6 +8,7 @@
     nativeMessagingHosts = [pkgs.keepassxc];
     settings = {
       "privacy.clearOnShutdown_v2.cookiesAndStorage" = false;
+      "webgl.disabled" = false;
     };
   };
 }
