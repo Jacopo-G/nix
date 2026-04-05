@@ -35,6 +35,7 @@
           monitor = "";
           dots_center = true;
           fade_on_empty = true;
+          font_family = "JetBrainsMono Nerd Font";
           font_color = "rgb(202, 211, 245)";
           inner_color = "rgb(91, 96, 120)";
           outer_color = "rgb(91, 96, 120)";
@@ -55,6 +56,7 @@
           monitor = "HDMI-A-1";
           text = "$TIME";
           font_size = 200;
+          font_family = "JetBrainsMono Nerd Font";
           color = "rgb(183, 189, 248)";
           position = "0, -150";
           halign = "center";
@@ -64,6 +66,7 @@
           monitor = "HDMI-A-1";
           text = "Hi, $USER ;)";
           font_size = 80;
+          font_family = "JetBrainsMono Nerd Font";
           color = "rgb(202, 211, 245)";
           halign = "center";
           valign = "center";
@@ -75,6 +78,7 @@
           monitor = "DP-1";
           text = "$TIME";
           font_size = 167;
+          font_family = "JetBrainsMono Nerd Font";
           color = "rgb(183, 189, 248)";
           position = "0, -125";
           halign = "center";
@@ -84,6 +88,7 @@
           monitor = "DP-1";
           text = "Hi, $USER ;)";
           font_size = 67;
+          font_family = "JetBrainsMono Nerd Font";
           color = "rgb(202, 211, 245)";
           halign = "center";
           valign = "center";
