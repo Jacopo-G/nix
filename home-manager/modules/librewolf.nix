@@ -9,6 +9,7 @@
     settings = {
       "privacy.clearOnShutdown_v2.cookiesAndStorage" = false;
       "webgl.disabled" = false;
+      "webgl.force-enabled" = true;
     };
   };
 }
