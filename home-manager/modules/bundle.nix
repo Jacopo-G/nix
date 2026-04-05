@@ -22,5 +22,6 @@
     ./librewolf.nix
     ./neovim.nix
     ./btop/btop.nix
+    ./yazi/yazi.nix
   ];
 }

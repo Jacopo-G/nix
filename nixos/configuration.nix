@@ -112,7 +112,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     home-manager
-    lf
     wget
     pavucontrol
     pamixer
