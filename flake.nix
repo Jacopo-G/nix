@@ -18,8 +18,6 @@
       url = "github:catppuccin/nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
   };
 
   outputs = {
@@ -27,21 +25,14 @@
     home-manager,
     spicetify-nix,
     catppuccin,
-    millennium,
     ...
   } @ inputs: let
     system = "x86_64-linux";
     specialArgs = {inherit inputs;};
-    pkgs = import nixpkgs {
-      inherit system;
-    };
   in {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       inherit system;
       modules = [
-        {
-          nixpkgs.overlays = [millennium.overlays.default];
-        }
         ./nixos/configuration.nix
 
         catppuccin.nixosModules.catppuccin
