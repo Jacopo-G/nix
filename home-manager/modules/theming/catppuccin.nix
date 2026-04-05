@@ -10,5 +10,6 @@
     accent = "lavender";
     ### APPLICATION SPECIFIC DISABLES ###
     hyprlock.enable = false;
+    wezterm.apply = true;
   };
 }
