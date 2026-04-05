@@ -18,6 +18,7 @@
     ./syncthing.nix
     ./git.nix
     ./alacritty.nix
+    ./wezterm/wezterm.nix
     ./fzf.nix
     ./librewolf.nix
     ./neovim.nix
