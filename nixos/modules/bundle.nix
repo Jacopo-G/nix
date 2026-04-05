@@ -9,5 +9,6 @@
     ./hypr/hyprlock.nix
     ./audio.nix
     ./bluetooth.nix
+    ./nvidia.nix
   ];
 }
