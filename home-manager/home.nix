@@ -9,6 +9,11 @@
     homeDirectory = "/home/alvino";
     stateVersion = "26.05";
 
+    sessionVariables = {
+      BROWSER = "librewolf";
+      TERMINAL = "wezterm";
+    };
+
     packages = with pkgs; [
       # add user-specific packages
       catppuccin-cursors.macchiatoLavender
