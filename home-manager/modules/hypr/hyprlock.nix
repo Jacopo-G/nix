@@ -23,7 +23,7 @@
       #};
       background = [
         {
-          path = "~/nix/config/hypr/hyprpaper/eclipse-colorized.png";
+          path = "~/nix/config/hypr/hyprpaper/galaxy-waves-recolorized.png";
           blur_passes = 2;
           contrast = 1.3000;
         }

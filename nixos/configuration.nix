@@ -57,7 +57,9 @@
     isNormalUser = true;
     description = "Alvino";
     extraGroups = ["networkmanager" "wheel"];
-    packages = with pkgs; [];
+    packages = with pkgs; [
+      ueberzugpp
+    ];
   };
 
   # Allow unfree packages
