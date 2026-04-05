@@ -10,5 +10,6 @@
     ./audio.nix
     ./bluetooth.nix
     ./nvidia.nix
+    ./steam.nix
   ];
 }
