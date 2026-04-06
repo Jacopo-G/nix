@@ -59,6 +59,7 @@
     extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [
       ueberzugpp
+      eduvpn-client
     ];
   };
 
