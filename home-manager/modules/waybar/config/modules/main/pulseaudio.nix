@@ -24,7 +24,8 @@
     min-length = 7;
     max-length = 7;
     tooltip-format = "<b>Output Device</b>: {desc}";
-    on-click = "pavucontrol";
+    on-click-right = "pavucontrol -t 3";
+    on-click = "wpctl set-mute @DEFAULT_SINK@ toggle";
   };
 
   "pulseaudio#input" = {
@@ -34,6 +35,7 @@
     min-length = 7;
     max-length = 7;
     on-click = "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle";
+    on-click-right = "pavucontrol -t 4";
     on-scroll-up = "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 0.05+";
     on-scroll-down = "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 0.05-";
     tooltip-format = "<b>Input Device</b>: {desc}";
