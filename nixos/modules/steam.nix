@@ -12,16 +12,6 @@
     gamescopeSession = {
       enable = true;
 
-      args = [
-        "-f"
-        "-b"
-        "-W"
-        "2560"
-        "-H"
-        "1440"
-        "--mangoapp"
-      ];
-
       env = {
         MANGOHUD = "1";
       };
