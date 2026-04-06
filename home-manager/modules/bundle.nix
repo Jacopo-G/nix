@@ -24,5 +24,6 @@
     ./neovim.nix
     ./btop/btop.nix
     ./yazi/yazi.nix
+    ./mangohud.nix
   ];
 }
