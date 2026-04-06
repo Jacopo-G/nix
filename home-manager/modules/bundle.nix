@@ -25,5 +25,6 @@
     ./btop/btop.nix
     ./yazi/yazi.nix
     ./mangohud.nix
+    ./lutris.nix
   ];
 }
