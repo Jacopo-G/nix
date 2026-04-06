@@ -13,5 +13,8 @@
   # CUSTOM
   "custom/distro" = import ./custom/distro.nix;
   "custom/notification" = import ./custom/notification.nix;
+  "custom/weather" = import ./custom/weather.nix;
 }
 // import ./custom/dividers.nix
+// import ./main/pulseaudio.nix
+// import ./custom/power.nix

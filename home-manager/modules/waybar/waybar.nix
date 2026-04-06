@@ -51,6 +51,12 @@ in {
           ];
           modules-right = [
             "mpris"
+            "custom/left_div#7"
+            "group/pulseaudio"
+            "custom/left_div#8"
+            "custom/weather"
+            "custom/left_inv#2"
+            "group/power"
           ];
           layer = "top";
           position = "top";

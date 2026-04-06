@@ -24,6 +24,7 @@
       nerd-fonts.jetbrains-mono
       playerctl
       jq
+      wttrbar
     ];
   };
   home.file.".config/hypr/hyprland.conf".source = ../config/hypr/hyprland.conf;

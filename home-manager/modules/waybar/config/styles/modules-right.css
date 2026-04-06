@@ -4,4 +4,35 @@
 	padding: 0 12px;
 }
 
+/* Volume */
 
+#custom-left_div.7 {
+	color: @backlight; /* TODO: rename @backlight to @volume, remove current @volume */
+}
+#pulseaudio {
+	background-color: @backlight;
+}
+
+/* weather */
+
+#custom-left_div.8 {
+	background-color: @backlight;
+	color: @battery;
+}
+#custom-weather {
+	background-color: @battery; /* TODO: rename */
+}
+#custom-left_inv.2 {
+	color: @battery;
+}
+
+/*power*/
+
+#power {
+	border-radius: 16px;
+	padding: 0 19px 0 16px;
+	color: @accent;
+}
+#power:hover {
+	background-color: @hover-bg;
+}
