@@ -29,10 +29,12 @@
 /*power*/
 
 #power {
-	border-radius: 16px;
-	padding: 0 19px 0 16px;
 	color: @accent;
 }
-#power:hover {
+#power .drawer-item {
+	border-radius: 16px;
+	padding: 0 8px;
+}
+#power .drawer-item:hover {
 	background-color: @hover-bg;
 }

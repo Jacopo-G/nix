@@ -24,7 +24,7 @@
     min-length = 7;
     max-length = 7;
     tooltip-format = "<b>Output Device</b>: {desc}";
-    on-click = "wezterm -e pavucontrol";
+    on-click = "pavucontrol";
   };
 
   "pulseaudio#input" = {
@@ -34,8 +34,8 @@
     min-length = 7;
     max-length = 7;
     on-click = "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle";
-    on-scroll-up = "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ +0.05";
-    on-scroll-down = "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ -0.05";
-    tooltip-format = "<b>Input Device</b>";
+    on-scroll-up = "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 0.05+";
+    on-scroll-down = "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 0.05-";
+    tooltip-format = "<b>Input Device</b>: {desc}";
   };
 }
