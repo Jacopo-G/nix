@@ -26,6 +26,8 @@
     tooltip-format = "<b>Output Device</b>: {desc}";
     on-click-right = "pavucontrol -t 3";
     on-click = "wpctl set-mute @DEFAULT_SINK@ toggle";
+    on-scroll-up = "wpctl set-volume @DEFAULT_SINK@ 0.05+";
+    on-scroll-down = "wpctl set-volume @DEFAULT_SINK@ 0.05-";
   };
 
   "pulseaudio#input" = {
