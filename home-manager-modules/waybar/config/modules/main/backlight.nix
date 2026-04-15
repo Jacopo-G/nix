@@ -1,0 +1,17 @@
+{
+  format = "{icon} {percent}%";
+  format-icons = [
+    ""
+    ""
+    ""
+    ""
+    ""
+    ""
+    ""
+    ""
+    ""
+  ];
+  min-length = 7;
+  max-length = 7;
+  tooltip-format = "Screen Brightness";
+}

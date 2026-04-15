@@ -4,14 +4,25 @@
 	padding: 0 12px;
 }
 
+#custom-left_div.6 {
+	color: @volume;
+}
+#backlight {
+  background-color: @volume;
+}
 /* Volume */
 
-#custom-left_div.7 {
+#custom-left_div.9 {
 	color: @backlight; /* TODO: rename @backlight to @volume, remove current @volume */
+}
+#custom-left_div.7 {
+	background-color: @volume;
+	color: @backlight;
 }
 #pulseaudio {
 	background-color: @backlight;
 }
+
 
 /* weather */
 
@@ -22,6 +33,9 @@
 #custom-weather {
 	background-color: @battery; /* TODO: rename */
 	padding: 0 5px;
+}
+#battery {
+	background-color: @battery;
 }
 #custom-left_inv.2 {
 	color: @battery;

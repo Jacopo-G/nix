@@ -28,14 +28,13 @@
       heroic
     ];
   };
-  home.file.".config/hypr/hyprland.conf".source = ../config/hypr/hyprland.conf;
-  home.file.".config/hypr/macchiato.conf".source = ../config/hypr/macchiato.conf;
+  home.file.".config/hypr/macchiato.conf".source = ./config/hypr/macchiato.conf;
   xdg.autostart.enable = true;
 
   fonts.fontconfig.enable = true;
 
   imports = [
-    ./modules/bundle.nix
+    ./home-manager-modules/bundle.nix
     inputs.spicetify-nix.homeManagerModules.spicetify
   ];
 }

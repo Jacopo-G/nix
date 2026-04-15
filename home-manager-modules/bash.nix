@@ -2,7 +2,7 @@
   programs.bash = {
     enable = true;
     shellAliases = {
-      rebuild = "~/nix/scripts/rebuild.sh";
+      #rebuild = "~/nix/scripts/rebuild.sh";
       update = "cd ~/nix && nix flake update && cd -";
     };
     profileExtra = ''

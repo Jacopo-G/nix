@@ -8,6 +8,8 @@
   "network" = import ./main/network.nix;
   "bluetooth" = import ./main/bluetooth.nix;
   "mpris" = import ./main/mpris.nix;
+  "backlight" = import ./main/backlight.nix;
+  "battery" = import ./main/battery.nix;
   # HYPR
   "hyprland/workspaces" = import ./hypr/workspaces.nix;
   # CUSTOM

@@ -37,6 +37,10 @@
     "format" = "";
     "tooltip" = false;
   };
+  "custom/left_div#9" = {
+    "format" = "";
+    "tooltip" = false;
+  };
 
   #Inverse
   "custom/left_inv#1" = {
