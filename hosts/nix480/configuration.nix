@@ -1,6 +1,7 @@
 {config, pkgs, lib, ...} : {
   imports = [
     ../../common-configuration.nix
+    ./hardware-configuration.nix
   ];
 
   networking.hostName = "nix480"; # Define your hostname.

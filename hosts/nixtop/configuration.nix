@@ -1,7 +1,7 @@
 {config, pkgs, ...} : {
   imports = [
     ../../common-configuration.nix
-    ../../nixos-modules/bundle.nix
+    ./hardware-configuration.nix
   ];
 
   networking.hostName = "nixtop"; # Define your hostname.
