@@ -69,9 +69,9 @@
           modules-right = [
             "mpris"
             "custom/left_div#6"
-            "group/pulseaudio"
-            "custom/left_div#7"
 	    "backlight"
+            "custom/left_div#7"
+            "group/pulseaudio"
             "custom/left_div#8"
             "battery"
             "custom/left_inv#2"
