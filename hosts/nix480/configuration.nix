@@ -13,8 +13,7 @@
     "i915.enable_fbc=1"
     "i915.enable_psr=2"
   ];
-  hardware.graphics = {
-    extraPackages = with pkgs; [
+  hardware.graphics.extraPackages = with pkgs; [
       # Required for modern Intel GPUs (Xe iGPU and ARC)
       intel-media-driver     # VA-API (iHD) userspace
       vpl-gpu-rt             # oneVPL (QSV) runtime
