@@ -21,7 +21,6 @@
       # Optional (compute / tooling):
       intel-compute-runtime  # OpenCL (NEO) + Level Zero for Arc/Xe
     ];
-  };
   
   services.fstrim.enable = lib.mkDefault true;
 
