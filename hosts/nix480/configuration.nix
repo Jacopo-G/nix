@@ -1,4 +1,9 @@
-{config, pkgs, lib, ...} : {
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}: {
   imports = [
     ../../common-configuration.nix
     ./hardware-configuration.nix
@@ -15,14 +20,13 @@
     "i915.enable_psr=2"
   ];
   hardware.graphics.extraPackages = with pkgs; [
-      # Required for modern Intel GPUs (Xe iGPU and ARC)
-      intel-media-driver     # VA-API (iHD) userspace
-      vpl-gpu-rt             # oneVPL (QSV) runtime
+    # Required for modern Intel GPUs (Xe iGPU and ARC)
+    intel-media-driver # VA-API (iHD) userspace
+    vpl-gpu-rt # oneVPL (QSV) runtime
 
-      # Optional (compute / tooling):
-      intel-compute-runtime  # OpenCL (NEO) + Level Zero for Arc/Xe
-    ];
-  
+    # Optional (compute / tooling):
+    intel-compute-runtime # OpenCL (NEO) + Level Zero for Arc/Xe
+  ];
+
   services.fstrim.enable = lib.mkDefault true;
-
 }

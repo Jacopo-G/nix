@@ -1,7 +1,11 @@
-{ config, pkgs, inputs, ...}: {
-	
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}: {
   imports = [
-	../../common-home.nix
+    ../../common-home.nix
   ];
 
   home.file.".config/hypr/hyprland.conf".source = ./config/hyprland.conf;

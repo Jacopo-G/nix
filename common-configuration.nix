@@ -4,7 +4,7 @@
   ...
 }: {
   imports = [
-	./nixos-modules/bundle.nix
+    ./nixos-modules/bundle.nix
   ];
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

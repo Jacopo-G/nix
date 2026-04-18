@@ -31,50 +31,49 @@
     specialArgs = {inherit inputs;};
   in {
     nixosConfigurations = {
-	    nixtop = nixpkgs.lib.nixosSystem {
-	      inherit system;
-	      modules = [
-		./hosts/nixtop/configuration.nix
+      nixtop = nixpkgs.lib.nixosSystem {
+        inherit system;
+        modules = [
+          ./hosts/nixtop/configuration.nix
 
-		catppuccin.nixosModules.catppuccin
+          catppuccin.nixosModules.catppuccin
 
-		home-manager.nixosModules.home-manager
-		{
-		  home-manager.useGlobalPkgs = true;
-		  home-manager.useUserPackages = true;
-		  home-manager.extraSpecialArgs = specialArgs;
-		  home-manager.users.alvino = {
-		    imports = [	
-		      ./hosts/nixtop/home.nix
-		      catppuccin.homeModules.catppuccin
-		    ];
-		  };
-		}
-	      ];
-	    };
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.extraSpecialArgs = specialArgs;
+            home-manager.users.alvino = {
+              imports = [
+                ./hosts/nixtop/home.nix
+                catppuccin.homeModules.catppuccin
+              ];
+            };
+          }
+        ];
+      };
 
-	    nix480 = nixpkgs.lib.nixosSystem {
-		inherit system;
-		modules = [
-			./hosts/nix480/configuration.nix
+      nix480 = nixpkgs.lib.nixosSystem {
+        inherit system;
+        modules = [
+          ./hosts/nix480/configuration.nix
 
+          catppuccin.nixosModules.catppuccin
 
-		catppuccin.nixosModules.catppuccin
-
-		home-manager.nixosModules.home-manager
-		{
-		  home-manager.useGlobalPkgs = true;
-		  home-manager.useUserPackages = true;
-		  home-manager.extraSpecialArgs = specialArgs;
-		  home-manager.users.alvino = {
-		    imports = [	
-		      ./hosts/nix480/home.nix
-		      catppuccin.homeModules.catppuccin
-		    ];
-		  };
-		}
-		];
-	    };
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.extraSpecialArgs = specialArgs;
+            home-manager.users.alvino = {
+              imports = [
+                ./hosts/nix480/home.nix
+                catppuccin.homeModules.catppuccin
+              ];
+            };
+          }
+        ];
+      };
     };
   };
 }

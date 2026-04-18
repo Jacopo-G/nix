@@ -12,6 +12,7 @@
     ./hypr/hyprpaper.nix
     ./hypr/hyprlock.nix
     ./hypr/hypridle.nix
+    ./hypr/hyprshot.nix
     ./waybar/waybar.nix
     ./swaync/swaync.nix
     ./rofi.nix
