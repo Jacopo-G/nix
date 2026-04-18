@@ -37,7 +37,7 @@
     ];
     layer = "top";
     position = "top";
-    height = 30;
+    #height = 30;
   };
   nix480 = {
     modules-left = [
@@ -79,6 +79,6 @@
     ];
     layer = "top";
     position = "top";
-    height = 30;
+    #height = 30;
   };
 }
