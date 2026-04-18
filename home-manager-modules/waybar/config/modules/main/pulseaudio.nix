@@ -11,8 +11,8 @@
   };
 
   "pulseaudio#output" = {
-    format = "{icon} {volume}%";
-    fomat-muted = "{icon} {volume}%";
+    format = "{icon}  {volume}%";
+    fomat-muted = "{icon}  {volume}%";
     format-icons = {
       default = ["" "" ""];
       default-muted = "";
