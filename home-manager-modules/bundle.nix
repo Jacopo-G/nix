@@ -26,6 +26,7 @@
     ./btop/btop.nix
     ./yazi/yazi.nix
     ./mangohud.nix
+    ./discord.nix
     #./lutris.nix
   ];
 }
