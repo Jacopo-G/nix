@@ -30,4 +30,20 @@
       options = ["cache.files=partial" "dropcacheonclose=true" "category.create=mfs" "fsname=mergerfs"];
     };
   };
+  services.snapraid = {
+    enable = true;
+    parityFiles = [
+      "/mnt/disk/snapraid.parity"
+    ];
+    contentFiles = [
+      "/var/snapraid.content"
+      "/mnt/disk/snapraid.content"
+    ];
+    dataDisks = {
+      data1 = "/mnt/disk/";
+    };
+    exclude = [
+      "/lost+found/"
+    ];
+  };
 }
