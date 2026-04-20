@@ -13,6 +13,8 @@
   myModules.waybar.layout = "nixtop";
 
   home.packages = with pkgs; [
+    # homelab stuff
     mergerfs
+    xfsprogs
   ];
 }
