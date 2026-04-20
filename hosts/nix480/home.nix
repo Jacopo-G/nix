@@ -10,5 +10,5 @@
 
   home.file.".config/hypr/hyprland.conf".source = ./config/hyprland.conf;
 
-  myModules.waybar.layout = "nix480";
+  waybar.layout = "nix480";
 }

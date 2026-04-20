@@ -10,7 +10,8 @@
 
   home.file.".config/hypr/hyprland.conf".source = ./config/hyprland.conf;
 
-  myModules.waybar.layout = "nixtop";
+  waybar.layout = "nixtop";
+  cmus.enable = true;
 
   home.packages = with pkgs; [
     # homelab stuff

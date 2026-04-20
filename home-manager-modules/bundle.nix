@@ -27,6 +27,7 @@
     ./yazi/yazi.nix
     ./mangohud.nix
     ./discord.nix
+    ./cmus.nix
     #./lutris.nix
   ];
 }

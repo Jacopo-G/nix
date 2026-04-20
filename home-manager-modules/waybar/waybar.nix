@@ -5,9 +5,9 @@
 }: let
   modules = import ./config/modules/imports.nix;
   layouts = import ./config/layouts.nix;
-  cfg = config.myModules.waybar;
+  cfg = config.waybar;
 in {
-  options.myModules.waybar.layout = lib.mkOption {
+  options.waybar.layout = lib.mkOption {
     type = lib.types.str;
     default = "nixtop";
     description = "Waybar layout preset";
