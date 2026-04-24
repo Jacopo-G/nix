@@ -28,6 +28,7 @@
     ./mangohud.nix
     ./discord.nix
     ./cmus.nix
+    ./direnv.nix
     #./lutris.nix
   ];
 }
