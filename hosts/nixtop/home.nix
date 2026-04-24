@@ -12,6 +12,7 @@
 
   waybar.layout = "nixtop";
   cmus.enable = true;
+  direnv.enable = true;
 
   home.packages = with pkgs; [
     # homelab stuff
