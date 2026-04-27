@@ -17,5 +17,7 @@
   home.packages = with pkgs; [
     # homelab stuff
     xfsprogs
+
+    prismlauncher
   ];
 }
