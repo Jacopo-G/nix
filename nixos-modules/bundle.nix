@@ -11,5 +11,6 @@
     ./bluetooth.nix
     ./nvidia.nix
     ./steam.nix
+    ./localsend.nix
   ];
 }
