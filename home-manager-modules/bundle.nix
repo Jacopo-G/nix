@@ -22,7 +22,6 @@
     ./wezterm/wezterm.nix
     ./fzf.nix
     ./librewolf.nix
-    ./neovim.nix
     ./btop/btop.nix
     ./yazi/yazi.nix
     ./mangohud.nix
