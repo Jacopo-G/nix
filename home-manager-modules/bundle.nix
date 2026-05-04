@@ -29,6 +29,7 @@
     ./discord.nix
     ./cmus.nix
     ./direnv.nix
+    ./nvf/nvf.nix
     #./lutris.nix
   ];
 }

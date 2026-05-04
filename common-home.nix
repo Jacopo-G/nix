@@ -36,5 +36,6 @@
   imports = [
     ./home-manager-modules/bundle.nix
     inputs.spicetify-nix.homeManagerModules.spicetify
+    inputs.nvf.homeManagerModules.default
   ];
 }
