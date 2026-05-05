@@ -10,6 +10,11 @@
 
   networking.hostName = "nixtop"; # Define your hostname.
 
+  navidrome = {
+    enable = true;
+    folder = "/home/alvino/Music/Music";
+  };
+
   environment.systemPackages = with pkgs; [
     mergerfs
   ];

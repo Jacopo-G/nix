@@ -12,5 +12,6 @@
     ./nvidia.nix
     ./steam.nix
     ./localsend.nix
+    ./navidrome.nix
   ];
 }
