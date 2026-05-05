@@ -12,7 +12,7 @@
 
   navidrome = {
     enable = true;
-    folder = "/home/alvino/Music";
+    folder = "/home/alvino/Music/Music";
   };
 
   environment.systemPackages = with pkgs; [

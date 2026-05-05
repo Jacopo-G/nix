@@ -19,5 +19,6 @@
         MusicFolder = config.navidrome.folder;
       };
     };
+    systemd.services.navidrome.serviceConfig.ProtectHome = lib.mkForce "tmpfs";
   };
 }
