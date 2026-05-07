@@ -13,5 +13,6 @@
     ./steam.nix
     ./localsend.nix
     ./navidrome.nix
+    ./tailscale.nix
   ];
 }
