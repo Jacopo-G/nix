@@ -32,5 +32,4 @@
       };
     };
   };
-  programs.neovim.defaultEditor = true;
 }

@@ -12,6 +12,8 @@
     sessionVariables = {
       BROWSER = "librewolf";
       TERMINAL = "wezterm";
+      EDITOR = "nvim";
+      VISUAL = "nvim";
     };
 
     packages = with pkgs; [
