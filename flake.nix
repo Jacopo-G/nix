@@ -23,6 +23,11 @@
       url = "github:NotAShelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -30,6 +35,7 @@
     home-manager,
     spicetify-nix,
     catppuccin,
+    sops-nix,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -40,6 +46,8 @@
         inherit system;
         modules = [
           ./hosts/nixtop/configuration.nix
+
+          sops-nix.nixosModules.sops
 
           catppuccin.nixosModules.catppuccin
 
@@ -62,6 +70,8 @@
         inherit system;
         modules = [
           ./hosts/nix480/configuration.nix
+
+          sops-nix.nixosModules.sops
 
           catppuccin.nixosModules.catppuccin
 
