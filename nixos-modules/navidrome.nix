@@ -17,6 +17,11 @@
       enable = true;
       openFirewall = true;
       settings = {
+        Tags.Artist.Split = [";"];
+        Tags.AlbumArtist.Split = [";"];
+        LastFM.ApiKey = "4e2344c0868e956ff7e09eb7ca499023";
+        LastFM.Secret = "be2ae746728f21a52e63eaba2aad6dac";
+        Plugins.Enabled = true;
         MusicFolder = config.navidrome.folder;
         Address = "0.0.0.0";
       };
