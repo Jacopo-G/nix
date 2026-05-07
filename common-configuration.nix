@@ -147,7 +147,7 @@
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
   networking.firewall.trustedInterfaces = ["eduVPN" "tailscale0"];
-  networking.firewall.allowedTCPPorts = [4533];
+  # networking.firewall.allowedTCPPorts = [4533];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
