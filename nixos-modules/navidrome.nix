@@ -6,9 +6,13 @@
 }: {
   options.navidrome = {
     enable = lib.mkEnableOption "enables navidrome";
-    folder = lib.mkOption {
+    musicFolder = lib.mkOption {
       type = lib.types.str;
       description = "Music folder location";
+    };
+    dataFolder = lib.mkOption {
+      type = lib.types.str;
+      description = "Data folder location";
     };
   };
 
@@ -22,7 +26,8 @@
         LastFM.ApiKey = "4e2344c0868e956ff7e09eb7ca499023";
         LastFM.Secret = "be2ae746728f21a52e63eaba2aad6dac";
         Plugins.Enabled = true;
-        MusicFolder = config.navidrome.folder;
+        MusicFolder = config.navidrome.musicFolder;
+        DataFolder = config.navidrome.dataFolder;
         Address = "0.0.0.0";
       };
     };

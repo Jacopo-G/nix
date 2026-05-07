@@ -12,7 +12,8 @@
 
   navidrome = {
     enable = true;
-    folder = "/home/alvino/Music/Music";
+    musicFolder = "/home/alvino/Music/Music";
+    dataFolder = "/home/alvino/Documents/navidrome_data";
   };
 
   environment.systemPackages = with pkgs; [
