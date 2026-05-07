@@ -56,6 +56,9 @@
     isNormalUser = true;
     description = "Alvino";
     extraGroups = ["networkmanager" "wheel"];
+    openssh.authorizedKeys.keys = [
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGJCyq8OZXHrRLmS2+uOYUMYWn9TrWsx0wEmLtbCFsNP"
+    ];
     packages = with pkgs; [
       eduvpn-client
     ];
@@ -142,7 +145,7 @@
   nix.optimise.automatic = true;
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
