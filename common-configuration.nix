@@ -57,8 +57,7 @@
     description = "Alvino";
     extraGroups = ["networkmanager" "wheel"];
     openssh.authorizedKeys.keys = [
-      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGJCyq8OZXHrRLmS2+uOYUMYWn9TrWsx0wEmLtbCFsNP"
-      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMDtRPJawhGnMfZKq0wcIPFrbfISWZxLG/eLG9BhE60G"
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHixyH1BIGA8AJQ7qlhbCsgxBCyTbep1defHj4gwYWcK"
     ];
     packages = with pkgs; [
       eduvpn-client
