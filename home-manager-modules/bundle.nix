@@ -29,7 +29,7 @@
     ./cmus.nix
     ./direnv.nix
     ./nvf/nvf.nix
-    ./udiskie.nix
+    #./udiskie.nix
     #./lutris.nix
   ];
 }

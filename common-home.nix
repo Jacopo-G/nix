@@ -28,6 +28,7 @@
       jq
       wttrbar
       heroic
+      udiskie
     ];
   };
   home.file.".config/hypr/macchiato.conf".source = ./config/hypr/macchiato.conf;
