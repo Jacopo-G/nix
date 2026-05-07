@@ -18,6 +18,7 @@
       openFirewall = true;
       settings = {
         MusicFolder = config.navidrome.folder;
+        Address = "0.0.0.0";
       };
     };
     systemd.services.navidrome.serviceConfig.ProtectHome = lib.mkForce "tmpfs";
