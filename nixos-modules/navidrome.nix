@@ -15,6 +15,7 @@
   config = lib.mkIf config.navidrome.enable {
     services.navidrome = {
       enable = true;
+      openFirewall = true;
       settings = {
         MusicFolder = config.navidrome.folder;
       };
