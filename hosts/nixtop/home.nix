@@ -21,5 +21,6 @@
 
     prismlauncher
     puddletag
+    picard
   ];
 }
