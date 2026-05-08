@@ -29,6 +29,7 @@
     ./cmus.nix
     ./direnv.nix
     ./nvf/nvf.nix
+    ./beets.nix
     #./udiskie.nix
     #./lutris.nix
   ];
