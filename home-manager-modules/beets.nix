@@ -35,7 +35,7 @@
         ];
         autobpm = {
           auto = true;
-          force = "yes";
+          force = true;
         };
         edit = {
           itemfields = [
@@ -56,22 +56,21 @@
           ];
           fetchart.auto = true;
           lyrics = {
-            auto = "yes";
-            force = "yes";
-            keep_synced = "yes";
-            synced = "yes";
+            auto = true;
+            force = true;
+            keep_synced = true;
+            synced = true;
           };
           replaygain = {
             backend = "ffmpeg";
             auto = true;
             parallel_on_import = true; # beet write after import
-            command = "mp3rgain";
           };
-          scrub.auto = "no";
+          scrub.auto = false;
 
           import = {
-            incremental = "no";
-            timid = "yes";
+            incremental = false;
+            timid = true;
           };
         };
       };
