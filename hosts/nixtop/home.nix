@@ -20,5 +20,6 @@
     xfsprogs
 
     prismlauncher
+    puddletag
   ];
 }
