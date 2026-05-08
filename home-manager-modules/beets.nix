@@ -65,6 +65,7 @@
             backend = "ffmpeg";
             auto = true;
             parallel_on_import = true; # beet write after import
+            command = "mp3rgain";
           };
           scrub.auto = "no";
 
