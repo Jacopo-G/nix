@@ -54,24 +54,24 @@
             "tracktotal"
             "disctotal"
           ];
-          fetchart.auto = true;
-          lyrics = {
-            auto = true;
-            force = true;
-            keep_synced = true;
-            synced = true;
-          };
-          replaygain = {
-            backend = "ffmpeg";
-            auto = true;
-            parallel_on_import = true; # beet write after import
-          };
-          scrub.auto = false;
+        };
+        fetchart.auto = true;
+        lyrics = {
+          auto = true;
+          force = true;
+          keep_synced = true;
+          synced = true;
+        };
+        replaygain = {
+          backend = "ffmpeg";
+          auto = true;
+          parallel_on_import = true; # beet write after import
+        };
+        scrub.auto = false;
 
-          import = {
-            incremental = false;
-            timid = true;
-          };
+        import = {
+          incremental = false;
+          timid = true;
         };
       };
     };
