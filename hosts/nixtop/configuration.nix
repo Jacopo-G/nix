@@ -12,7 +12,7 @@
 
   navidrome = {
     enable = true;
-    musicFolder = "/home/alvino/Music/Music";
+    musicFolder = "/home/alvino/Music/Library";
     dataFolder = "/home/alvino/Documents/navidrome_data";
   };
 
