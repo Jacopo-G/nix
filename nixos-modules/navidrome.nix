@@ -33,6 +33,8 @@
         DataFolder = config.navidrome.dataFolder;
         Address = "0.0.0.0";
         Subsonic.DefaultReportRealPath = true;
+        Subsonic.AppendAlbumVersion = false;
+        Subsonic.AppendSubtitle = false;
       };
     };
     systemd.services.navidrome.serviceConfig.ProtectHome = lib.mkForce "tmpfs";
