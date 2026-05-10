@@ -15,5 +15,6 @@
     ./localsend.nix
     ./navidrome.nix
     ./tailscale.nix
+    ./fish.nix
   ];
 }

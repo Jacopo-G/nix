@@ -20,6 +20,8 @@
         telescope.enable = true;
         autocomplete.nvim-cmp.enable = true;
 
+        lsp.servers.nixd.settings.nil.nix.autoArchive = true;
+
         languages = {
           enableLSP = true;
           enableTreesitter = true;
@@ -28,6 +30,7 @@
           ts.enable = true;
           clang.enable = true;
           python.enable = true;
+          bash.enable = true;
         };
       };
     };
