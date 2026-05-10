@@ -30,6 +30,7 @@
     ./direnv.nix
     ./nvf/nvf.nix
     ./beets.nix
+    ./fish.nix
     #./udiskie.nix
     #./lutris.nix
   ];
