@@ -36,6 +36,9 @@
   home.file.".config/hypr/macchiato.conf".source = ./config/hypr/macchiato.conf;
   xdg.autostart.enable = true;
 
+  # temp fix for systemd hyprland binding until I actually migrate hyprland to nix (w/ UWSM)
+  wayland.windowManager.hyprland.systemd.enable = true;
+
   fonts.fontconfig.enable = true;
 
   imports = [
