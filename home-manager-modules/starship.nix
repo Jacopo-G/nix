@@ -1,7 +1,7 @@
 {...}: {
   programs.starship = {
     enable = true;
-    configPath = "nix/config/starship.toml";
+    configPath = ".config/starship/starship.toml";
     enableFishIntegration = true;
     settings = {
       add_newline = true;
