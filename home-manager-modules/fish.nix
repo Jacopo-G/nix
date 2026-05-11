@@ -3,7 +3,7 @@
     enable = true;
     loginShellInit = ''
       if test -z "$WAYLAND_DISPLAY"; and test "$XDG_VTNR" = 1
-        exec dbus-run-session start-hyprland
+        exec start-hyprland
       end
     '';
     shellAbbrs = {
