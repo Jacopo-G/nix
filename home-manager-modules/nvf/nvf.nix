@@ -21,6 +21,7 @@
         autocomplete.nvim-cmp.enable = true;
 
         lsp.enable = true;
+        lsp.servers.nixd.settings.nil.nix.autoArchive = true;
 
         languages = {
           enableTreesitter = true;
@@ -29,6 +30,7 @@
           typescript.enable = true;
           clang.enable = true;
           python.enable = true;
+          bash.enable = true;
         };
       };
     };

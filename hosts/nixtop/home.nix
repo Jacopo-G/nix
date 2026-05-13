@@ -13,11 +13,14 @@
   waybar.layout = "nixtop";
   cmus.enable = true;
   direnv.enable = true;
+  beets.enable = true;
 
   home.packages = with pkgs; [
     # homelab stuff
     xfsprogs
 
     prismlauncher
+    puddletag
+    picard
   ];
 }

@@ -29,6 +29,8 @@
       wttrbar
       heroic
       udiskie
+      feishin
+      ffmpeg
     ];
   };
   home.file.".config/hypr/macchiato.conf".source = ./config/hypr/macchiato.conf;
