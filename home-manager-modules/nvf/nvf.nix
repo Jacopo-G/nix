@@ -31,6 +31,7 @@
           clang.enable = true;
           python.enable = true;
           bash.enable = true;
+          markdown.enable = true;
         };
       };
     };
