@@ -19,6 +19,7 @@
     # homelab stuff
     xfsprogs
 
+    moonlight-qt
     prismlauncher
     puddletag
     picard
