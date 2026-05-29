@@ -15,7 +15,7 @@
             key = "<leader>t";
             mode = "n";
             silent = true;
-            action = ":NvimTreeToggle";
+            action = ":NvimTreeToggle<CR>";
           }
         ];
 
