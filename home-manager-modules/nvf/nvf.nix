@@ -10,6 +10,15 @@
         viAlias = true;
         vimAlias = true;
 
+        keymaps = [
+          {
+            key = "<leader>t";
+            mode = "n";
+            silent = true;
+            action = ":NvimTreeToggle";
+          }
+        ];
+
         theme = {
           enable = true;
           name = "catppuccin";
