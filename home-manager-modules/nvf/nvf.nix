@@ -16,8 +16,21 @@
           style = "macchiato";
         };
 
+        globals = {
+          mapleader = "\\";
+        };
+
         statusline.lualine.enable = true;
-        telescope.enable = true;
+        telescope = {
+          enable = true;
+          extensions = [
+            {
+              name = "fzf";
+              packages = [pkgs.vimPlugins.telescope-fzf-native-nvim];
+              setup = {fzf = {fuzzy = true;};};
+            }
+          ];
+        };
         autocomplete.nvim-cmp.enable = true;
 
         lsp.enable = true;

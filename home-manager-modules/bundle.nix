@@ -32,6 +32,8 @@
     ./beets.nix
     ./fish.nix
     ./starship.nix
+    ./ripgrep.nix
+    ./fd.nix
     #./udiskie.nix
     #./lutris.nix
   ];
