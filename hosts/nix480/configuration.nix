@@ -19,6 +19,10 @@
     "i915.enable_fbc=1"
     "i915.enable_psr=2"
   ];
+  boot.extraModulePackages = with config.boot.kernelPackages; [v4l2loopback];
+  boot.kernelModules = [
+    "v4l2loopback"
+  ];
   hardware.graphics.extraPackages = with pkgs; [
     # Required for modern Intel GPUs (Xe iGPU and ARC)
     intel-media-driver # VA-API (iHD) userspace
