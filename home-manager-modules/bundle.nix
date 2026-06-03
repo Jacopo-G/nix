@@ -34,7 +34,6 @@
     ./starship.nix
     ./ripgrep.nix
     ./fd.nix
-    ./obs.nix
     #./udiskie.nix
     #./lutris.nix
   ];

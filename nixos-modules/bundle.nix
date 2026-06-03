@@ -16,5 +16,6 @@
     ./navidrome.nix
     ./tailscale.nix
     ./fish.nix
+    ./obs.nix
   ];
 }
