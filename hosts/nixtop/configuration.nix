@@ -20,6 +20,11 @@
     mergerfs
   ];
 
+  boot.extraModulePackages = with config.boot.kernelPackages; [v4l2loopback];
+  boot.kernelModules = [
+    "v4l2loopback"
+  ];
+
   # configure homelab filesystem with mergerfs and snapraid
   fileSystems = {
     "/mnt/parity" = {
