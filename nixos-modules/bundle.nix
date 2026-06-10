@@ -17,5 +17,6 @@
     ./tailscale.nix
     ./fish.nix
     ./obs.nix
+    ./keyd.nix
   ];
 }

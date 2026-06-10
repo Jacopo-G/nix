@@ -45,9 +45,6 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  services.xserver.xkb.options = "caps:swapescape";
-  console.useXkbConfig = true;
-
   services.getty.autologinUser = "alvino";
 
   programs.hyprland = {
