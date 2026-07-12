@@ -3,6 +3,7 @@
     enable = true;
     interactiveShellInit = ''
       set fish_greeting
+      devenv hook fish | source
     '';
     loginShellInit = ''
       if test -z "$WAYLAND_DISPLAY"; and test "$XDG_VTNR" = 1
