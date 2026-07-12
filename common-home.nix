@@ -1,5 +1,4 @@
 {
-  config,
   pkgs,
   inputs,
   ...
@@ -19,18 +18,19 @@
     packages = with pkgs; [
       # add user-specific packages
       catppuccin-cursors.macchiatoLavender
-      hyprpaper
-      libreoffice
-      hunspell
-      hunspellDicts.en_US
-      nerd-fonts.jetbrains-mono
-      playerctl
-      jq
-      wttrbar
-      heroic
-      udiskie
+      devenv
       feishin
       ffmpeg
+      heroic
+      hunspell
+      hunspellDicts.en_US
+      hyprpaper
+      jq
+      libreoffice
+      nerd-fonts.jetbrains-mono
+      playerctl
+      udiskie
+      wttrbar
     ];
   };
   home.file.".config/hypr/macchiato.conf".source = ./config/hypr/macchiato.conf;
