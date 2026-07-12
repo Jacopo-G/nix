@@ -12,7 +12,7 @@
 
   waybar.layout = "nixtop";
   cmus.enable = true;
-  direnv.enable = true;
+  direnv.enable = false;
   beets.enable = true;
 
   home.packages = with pkgs; [
